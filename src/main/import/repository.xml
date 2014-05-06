@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content xmlns:j="http://www.jahia.org/jahia/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0">
+    <modules jcr:primaryType="jnt:modules">
+        <acme-news j:dependencies="default sample-bootstrap-templates"
+                 j:modulePriority="0"
+                 j:moduleType="module"
+                 j:title="Acme-News"
+                 jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                 jcr:primaryType="jnt:module">
+                
+                <portlets jcr:primaryType="jnt:portletFolder"/>
+                <files jcr:primaryType="jnt:folder"/>
+                <contents jcr:primaryType="jnt:contentFolder"/>
+                <templates j:rootTemplatePath="/base" jcr:primaryType="jnt:templatesFolder">
+                    <files jcr:primaryType="jnt:folder"/>
+                    <contents jcr:primaryType="jnt:contentFolder"/>
+                    <acme-news j:applyOn="acme:acmeNews"
+                       j:defaultTemplate="true"
+                       j:hiddenTemplate="false"
+                       j:priority="10"
+                       jcr:primaryType="jnt:contentTemplate">
+                        <j:translation_en jcr:language="en"
+                                 jcr:mixinTypes="mix:title"
+                                 jcr:primaryType="jnt:translation"
+                                 jcr:title="acme-news"/>
+                        <pagecontent jcr:primaryType="jnt:contentList">
+                            <bootstrap-layer-container-rows-a containerType="fluid"
+                                                    jcr:mixinTypes="jmix:bootstrapFullComponentAdvancedProps jmix:bootstrapFullComponentRowPredefined"
+                                                    jcr:primaryType="jnt:bootstrapFullComponent"
+                                                    layout="12"
+                                                    rowType="predefined"
+                                                    sectionElement="section">
+                                <bootstrap-layer-container-rows-a jcr:primaryType="jnt:contentList">
+                                    <main-resource-display j:mainResourceView="detail" jcr:primaryType="jnt:mainResourceDisplay"/>
+                            <back jcr:primaryType="jnt:backToParentPage">
+                                <j:translation_en jcr:language="en"
+                                       jcr:mixinTypes="mix:title"
+                                       jcr:primaryType="jnt:translation"
+                                       jcr:title="Back to previous page"/>
+                            </back>
+                                </bootstrap-layer-container-rows-a>
+                                <back j:node="/modules/acme-news/templates/acme-news/pagecontent/bootstrap-layer-container-rows-a/bootstrap-layer-container-rows-a/back"
+                           jcr:primaryType="jnt:contentReference"/>
+                            </bootstrap-layer-container-rows-a>
+                        </pagecontent>
+                    </acme-news>
+                </templates>
+                
+            </acme-news>
+    </modules>
+</content>

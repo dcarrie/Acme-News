@@ -1,0 +1,13 @@
+<acme = 'http://www.acme.org/nt'>
+<acmeMix = 'http://www.acme.org/mix'>
+<jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+<jnt = 'http://www.jahia.org/jahia/nt/1.0'>
+<mix = 'http://www.jcp.org/jcr/mix/1.0'>
+
+[acmeMix:acmeComponents] > jmix:droppableContent mixin
+
+[acme:acmeNews] > jnt:content, acmeMix:acmeComponents, mix:title
+ - jcr:title (string) scoreboost=3.0
+ - body (string, richtext)
+ - image (weakreference, picker[type='image'])
+
