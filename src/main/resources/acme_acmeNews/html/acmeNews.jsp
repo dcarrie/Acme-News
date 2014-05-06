@@ -15,6 +15,7 @@
 <%--@elvariable id="currentResource" type="org.jahia.services.render.Resource"--%>
 <%--@elvariable id="url" type="org.jahia.services.render.URLGenerator"--%>
 
+<h2>Version 1.0</h2>
 
 <template:addResources type="css" resources="acmeCSS.css" />
 
