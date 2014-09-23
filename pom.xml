@@ -70,8 +70,7 @@
         please contact the sales department at sales@jahia.com.
 
 -->
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.jahia.modules</groupId>
@@ -80,14 +79,14 @@
   </parent>
   <groupId>org.jahia.modules</groupId>
   <artifactId>acme-news</artifactId>
-  <version>1.1-SNAPSHOT</version>
+  <version>1.1</version>
   <packaging>bundle</packaging>
   <name>Acme News</name>
   <description>This is the custom module (Acme News) for running on a Digital Factory server.</description>
   <scm>
     <connection>scm:git:git@github.com:dcarrie/Acme-News.git</connection>
     <developerConnection>scm:git:git@github.com:dcarrie/Acme-News.git</developerConnection>
-    <tag></tag>
+    <tag>1_1</tag>
   </scm>
   <repositories>
     <repository>
